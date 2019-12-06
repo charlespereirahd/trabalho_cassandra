@@ -1,0 +1,5 @@
+CREATE KEYSPACE ks_teste WITH replication = {'class': 'SimpleStrategy', 'replication_factor': '1'} AND durable_writes 'true';
+
+USE KEYSPACE ks_teste;
+
+CREATE TABLE agenda (codigo int PRIMARY KEY, nome TEXT, telefone TEXT);
